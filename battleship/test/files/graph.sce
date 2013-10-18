@@ -14,32 +14,32 @@ durations    = [6              10.5           ;
 // Graph number of rounds vs. sample sizes
 subplot(1, 3, 1);
 title ("Algorithm Accuracy");
-xlabel ("Monte Carlo Sample Size");
-ylabel ("Number of Guesses Required");
 plot(sample_sizes, guesses, 'o', sample_sizes, mean(guesses, 'r'));
 axes = gca();
 axes.sub_ticks = [0, 0];
 axes.data_bounds(:,1) = [-5;30];
+xlabel ("Monte Carlo Sample Size");
+ylabel ("Number of Guesses Required");
 
 // Graph algorithm steps vs. sample sizes
 subplot(1, 3, 2);
 title ("Algorithm Efficiency (Steps)");
-xlabel ("Monte Carlo Sample Size");
-ylabel ("Number Steps Per Game");
 plot(sample_sizes, steps, 'o', sample_sizes, mean(steps, 'r'));
 axes = gca();
 axes.sub_ticks = [0, 0];
 axes.data_bounds(:,1) = [-5;30];
+xlabel ("Monte Carlo Sample Size");
+ylabel ("Number Steps Per Game");
 
 // Graph game duration vs. sample sizes
 subplot(1, 3, 3);
 title ("Algorithm Efficiency (Duration)");
-xlabel ("Monte Carlo Sample Size");
-ylabel ("Simulation Duration (Seconds)");
 plot(sample_sizes, durations, 'o', sample_sizes, mean(durations, 'r'));
 axes = gca();
 axes.sub_ticks = [0, 0];
 axes.data_bounds(:,1) = [-5;30];
+xlabel ("Monte Carlo Sample Size");
+ylabel ("Simulation Duration (Seconds)");
 
 // Close the window after a mouse click
 xclick();

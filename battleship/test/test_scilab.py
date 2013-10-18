@@ -21,7 +21,7 @@ class TestScilab(unittest.TestCase):  # pylint: disable=R0904
     """Unit tests for the Scilab module."""
 
     RESULTS = {0: [(60, 1000, 6),
-                    (65, 1100, 5.1)],
+                   (65, 1100, 5.1)],
                25: [(55, 2000, 10.5),
                     (54, 2100, 11)]}
 
